@@ -77,7 +77,7 @@ set foldlevel=99
 nnoremap <space> za
 
 " General indent rules for files
-au BufNewFile,BufRead *.js, *.html, *.md, *.css, .yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120 expandtab fileformat=unix
+au BufNewFile,BufRead *.js, *.html, *.md, *.css, *.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120 expandtab fileformat=unix
 
 " Uppercase the current word in insert mode and move to the
 " word end
