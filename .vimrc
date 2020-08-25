@@ -76,8 +76,6 @@ set foldlevel=99
 
 nnoremap <space> za
 
-" General indent rules for files
-au BufNewFile,BufRead *.js, *.html, *.md, *.css, *.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120 expandtab fileformat=unix
 
 " Uppercase the current word in insert mode and move to the
 " word end
@@ -87,6 +85,12 @@ inoremap <C-U> <esc>viwUei
 " word end
 nnoremap <C-U> viwUe<esc>
 
+" General indent rules for files
+augroup indentrules
+	autocmd BufNewFile,BufRead *.js, *.html, *.md, *.css, *.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120 expandtab fileformat=unix
+augroup END
+
+" Group for nerdtree
 augroup nerdtree
 	autocmd StdinReadPre * let s:std_in=1
 	autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
