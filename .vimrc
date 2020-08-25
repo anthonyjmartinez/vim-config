@@ -87,7 +87,7 @@ nnoremap <C-U> viwUe<esc>
 
 " General indent rules for files
 augroup indentrules
-	autocmd BufNewFile,BufRead *.js, *.html, *.md, *.css, *.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120 expandtab fileformat=unix
+	autocmd BufNewFile,BufRead *.js,*.html,*.md,*.css,*.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120 expandtab fileformat=unix
 augroup END
 
 " Group for nerdtree
