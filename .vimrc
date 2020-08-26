@@ -48,9 +48,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set background=dark encoding=utf-8 number nomodeline hidden
+set background=dark encoding=utf-8 number nomodeline hidden wrap linebreak
 
-:color desert
+:colorscheme desert
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
@@ -76,7 +76,6 @@ set foldlevel=99
 
 nnoremap <space> za
 
-
 " Uppercase the current word in insert mode and move to the
 " word end
 inoremap <C-U> <esc>viwUei
@@ -85,9 +84,10 @@ inoremap <C-U> <esc>viwUei
 " word end
 nnoremap <C-U> viwUe<esc>
 
+
 " General indent rules for files
 augroup indentrules
-	autocmd BufNewFile,BufRead *.js,*.html,*.md,*.css,*.yaml,*.uml setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120 expandtab fileformat=unix
+	autocmd BufNewFile,BufRead *.js,*.html,*.md,*.css,*.yaml,*.uml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab fileformat=unix
 	autocmd Filetype text setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 	autocmd Filetype sql setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 	autocmd Filetype c setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
