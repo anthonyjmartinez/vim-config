@@ -22,8 +22,6 @@ Plugin 'vim-syntastic/syntastic'
 
 Plugin 'nvie/vim-flake8'
 
-Plugin 'ctrlpvim/ctrlp.vim'
-
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'vim-airline/vim-airline'
