@@ -16,8 +16,6 @@ Plugin 'rust-lang/rust.vim'
 
 Plugin 'vim-scripts/indentpython.vim'
 
-Plugin 'Valloric/YouCompleteMe'
-
 Plugin 'vim-syntastic/syntastic'
 
 Plugin 'nvie/vim-flake8'
@@ -54,7 +52,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_theme='jellybeans'
 let g:syntastic_python_checkers = ['flake8']
-let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Configuration for splits and split navigation
 set splitbelow
